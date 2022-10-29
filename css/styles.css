@@ -60,6 +60,10 @@ body {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main-header {
     background-color: #2F303A;
 }
@@ -154,9 +158,4 @@ footer .logo {
     line-height: 1.88;
     letter-spacing: 0.03em;  
 }
-
-.projects-list a {
-    text-decoration: none;
-}
-
 
