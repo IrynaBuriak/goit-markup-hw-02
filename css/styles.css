@@ -1,9 +1,10 @@
 :root {
---primary-text-color: #757575;
---header-text-color: #212121;
---accent-color: #2196F3;
---logo-text-color: #000000;
---white-color: #fff;
+    --primary-text-color: #757575;
+    --header-text-color: #212121;
+    --accent-color: #2196F3;
+    --logo-text-color: #000000;
+    --white-color: #fff;
+    --footer-contacts-color: color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .logo {
@@ -29,11 +31,11 @@ body {
 }
 
 .logo:hover {
-    color:var(--accent-color)
+    color: var(--accent-color);
 }
 
 .site-nav .link {
-    color: var(--accent-color);
+    color: var(--header-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -41,25 +43,30 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link:hover, 
+.site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--logo-text-color);
+    color: var(--accent-color);
 }
+
 
 .list {
     list-style: none;
 }
 
-.contacts {
+.contacts a {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
-.contacts a {
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+a {
     text-decoration: none;
 }
 
@@ -78,8 +85,8 @@ body {
 }
 
 .button {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: var(--header-text-color);
+    background-color: #F5F4FA;;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -94,7 +101,8 @@ body {
 
 .button.secondary {
     color: var(--header-text-color);
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
+    ;
     cursor: pointer;
 }
 
@@ -108,14 +116,21 @@ body {
 
 .section-header {
     color: var(--header-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.36;
 }
 
 .team {
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
+    ;
+}
+
+.team-descr {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
 }
 
 footer {
@@ -124,7 +139,19 @@ footer {
 
 footer a {
     text-decoration: none;
+    color: var(--footer-contacts-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.map {
     color: var(--white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 footer .logo {
@@ -140,7 +167,7 @@ footer .logo {
     font-style: normal;
 }
 
-/* Portfolio page */
+    /* Portfolio page */
 
 .projects-title {
     color: var(--header-text-color);
@@ -155,6 +182,5 @@ footer .logo {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
 }
-
