@@ -61,8 +61,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts a:hover,
+.contacts a:focus {
     color: var(--accent-color);
 }
 
@@ -93,6 +93,12 @@ a {
     cursor: pointer;
 }
 
+.button:hover, .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
 .button.primary {
     color: var(--white-color);
     background-color: var(--accent-color);
@@ -102,7 +108,6 @@ a {
 .button.secondary {
     color: var(--header-text-color);
     background-color: #F5F4FA;
-    ;
     cursor: pointer;
 }
 
@@ -144,6 +149,11 @@ footer a {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--accent-color);
 }
 
 .map {
