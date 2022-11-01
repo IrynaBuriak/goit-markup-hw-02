@@ -126,6 +126,9 @@ a {
     line-height: 1.36;
 }
 
+.hidden {
+    visibility: hidden;
+}
 .team {
     background-color: #F5F4FA;
     ;
